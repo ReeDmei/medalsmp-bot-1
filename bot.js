@@ -46,4 +46,6 @@ client.on('message', message => {
 
 })
 
-client.login(`NzMyMzgzNDk5ODU1NTkzNTQ2.XwzzSQ.3huK8Q1Lc5sYGSadg5WgxdxGTNc`)
+const token = process.env.DISCORD_TOKEN
+
+client.login(`${token}`)
