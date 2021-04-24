@@ -1,6 +1,7 @@
 const Discord = require('discord.js');
 const fs = require('fs');
 const util = require(`minecraft-server-util`);
+require('dotenv').config();
 
 const prefix = '-';
 
@@ -41,8 +42,6 @@ client.on('message', message => {
             message.channel.send('this is a trident :trident:');
         } else if (command === 'vsynkz') {
             message.channel.send(`synkz's boyfriend, moon is`);
-        } else if (command === 'rcon') {
-            client.commands.get('rcon').execute(message, args, Discord, client, util)
         }
 
 })
