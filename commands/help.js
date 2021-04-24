@@ -7,5 +7,7 @@ module.exports = {
         .setDescription(``)
         .setFooter(`MedalSMP`)
         .setTimestamp();
+        
+        message.channel.send(helpEmbed);
     }
 }
